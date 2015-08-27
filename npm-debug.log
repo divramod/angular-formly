@@ -1,0 +1,82 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'meteor-package-publisher' ]
+2 info using npm@2.5.1
+3 info using node@v0.12.0
+4 warn package.json @ No repository field.
+5 silly cache add args [ 'meteor-package-publisher', null ]
+6 verbose cache add spec meteor-package-publisher
+7 silly cache add parsed spec { raw: 'meteor-package-publisher',
+7 silly cache add   scope: null,
+7 silly cache add   name: 'meteor-package-publisher',
+7 silly cache add   rawSpec: '',
+7 silly cache add   spec: '*',
+7 silly cache add   type: 'range' }
+8 verbose addNamed meteor-package-publisher@*
+9 silly addNamed semver.valid null
+10 silly addNamed semver.validRange *
+11 silly addNameRange { name: 'meteor-package-publisher', range: '*', hasData: false }
+12 silly mapToRegistry name meteor-package-publisher
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/meteor-package-publisher
+16 verbose addNameRange registry:https://registry.npmjs.org/meteor-package-publisher not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/meteor-package-publisher
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 9:53:20 PM
+20 verbose request using bearer token for auth
+21 verbose request id a7c8a1f497a3bc98
+22 http request GET https://registry.npmjs.org/meteor-package-publisher
+23 http 404 https://registry.npmjs.org/meteor-package-publisher
+24 verbose headers { 'content-type': 'application/json',
+24 verbose headers   'cache-control': 'max-age=0',
+24 verbose headers   'content-length': '2',
+24 verbose headers   'accept-ranges': 'bytes',
+24 verbose headers   date: 'Thu, 27 Aug 2015 19:53:20 GMT',
+24 verbose headers   via: '1.1 varnish',
+24 verbose headers   connection: 'keep-alive',
+24 verbose headers   'x-served-by': 'cache-fra1238-FRA',
+24 verbose headers   'x-cache': 'MISS',
+24 verbose headers   'x-cache-hits': '0',
+24 verbose headers   'x-timer': 'S1440705200.723715,VS0,VE116' }
+25 silly get cb [ 404,
+25 silly get   { 'content-type': 'application/json',
+25 silly get     'cache-control': 'max-age=0',
+25 silly get     'content-length': '2',
+25 silly get     'accept-ranges': 'bytes',
+25 silly get     date: 'Thu, 27 Aug 2015 19:53:20 GMT',
+25 silly get     via: '1.1 varnish',
+25 silly get     connection: 'keep-alive',
+25 silly get     'x-served-by': 'cache-fra1238-FRA',
+25 silly get     'x-cache': 'MISS',
+25 silly get     'x-cache-hits': '0',
+25 silly get     'x-timer': 'S1440705200.723715,VS0,VE116' } ]
+26 verbose stack Error: Registry returned 404 for GET on https://registry.npmjs.org/meteor-package-publisher
+26 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:244:14)
+26 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:178:14)
+26 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:344:22)
+26 verbose stack     at Request.emit (events.js:110:17)
+26 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1239:14)
+26 verbose stack     at Request.emit (events.js:129:20)
+26 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1187:12)
+26 verbose stack     at IncomingMessage.emit (events.js:129:20)
+26 verbose stack     at _stream_readable.js:908:16
+26 verbose stack     at process._tickCallback (node.js:355:11)
+27 verbose statusCode 404
+28 verbose pkgid meteor-package-publisher
+29 verbose cwd /home/mod/code/meteor/angular-formly
+30 error Linux 3.16.0-41-generic
+31 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "meteor-package-publisher"
+32 error node v0.12.0
+33 error npm  v2.5.1
+34 error code E404
+35 error 404 Registry returned 404 for GET on https://registry.npmjs.org/meteor-package-publisher
+35 error 404
+35 error 404 'meteor-package-publisher' is not in the npm registry.
+35 error 404 You should bug the author to publish it (or use the name yourself!)
+35 error 404
+35 error 404 Note that you can also install from a
+35 error 404 tarball, folder, http url, or git url.
+36 verbose exit [ 1, true ]
